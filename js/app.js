@@ -4,7 +4,7 @@ const keys_btn = document.querySelectorAll("button");
 
 // keyword enter:
 document.addEventListener("keyup", function(event) {
-    if (event.keyCode != 13) {
+    if (event != 13) {
         for (var i = 0; i < keys_btn.length; i++) {
             var id = keys_btn[i].getAttribute("data-id");
 
